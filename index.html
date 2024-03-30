@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes App - Submission 2</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <note-header title="Notes App"></note-header>
+    </header>
+    <main>
+      <div id="loadingSpinner" class="loading-spinner">
+        <div class="spinner"></div>
+      </div>
+
+      <div class="container">
+        <section class="input-section">
+          <note-form></note-form>
+        </section>
+
+        <section class="filter">
+          <h2>Filter Notes</h2>
+          <select id="filterNotes">
+            <option value="non-archived">Non Archived</option>
+            <option value="archived">Archived</option>
+          </select>
+        </section>
+
+        <section tabindex="0" id="noteList" class="note-list"></section>
+      </div>
+    </main>
+    <footer>
+      <note-footer></note-footer>
+    </footer>
+  </body>
+</html>
